@@ -73,11 +73,13 @@ let starWarsData = [{
   gender: 'female'
 }];
 
-const returnNames = (arr) => {
-  return arr.reduce((accumulator, currentValue, index) => {
-    accumulator[index] = currentValue.name;
-    return accumulator;
-  }, [])
+const returnNames = (data) => {
+  let newArray = data.reduce((accumulator, currentValue, index) => {
+   return  accumulator + ',' + currentValue.name
+  },[])
+  let newerArray = newArray.split(',')
+  newerArray.shift();
+  return newerArray
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -147,10 +149,14 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  return strArray.reduce(((accumulator, currentValue, index) => {
-    
-  },[]
-  ))};
+  return arr.reduce((accumulator, currentValue, index) => {
+    if(currentValue.children){
+      return accumulator + currentValue.children.length
+    } else{
+      return accumulator;
+    }
+  },0)
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -161,7 +167,7 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
