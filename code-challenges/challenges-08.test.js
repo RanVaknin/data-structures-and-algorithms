@@ -202,7 +202,7 @@ const evenOddNumericValues = (arr) => {
       return 'odd'
     }
   })
-  return numValues;
+  return numValues
 };
 
 /* ------------------------------------------------------------------------------------------------
