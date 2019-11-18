@@ -92,9 +92,8 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   let strArray = str.split('');
-  return strArray.reduce(((accumulator, currentValue, index) => {
-    
-  },[]))
+  let rev = strArray.reduce((a, b) => [b].concat(a), []);
+  return rev.join('');
 };
 
 
@@ -167,7 +166,7 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-
+  return arr.reduce((a,b) => a + b, 0) / arr.length
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -188,7 +187,8 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  // Solution code here...
+  let copy = arr.filter(isPrime);
+return copy
 };
 
 /* ------------------------------------------------------------------------------------------------
