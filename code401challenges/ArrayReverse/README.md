@@ -1,5 +1,5 @@
 # Reverse an Array
-Reversing an array 
+????? how is this different than the next section? can you give us an example of what needs to be written here vs ##challenge field?
 
 ## Challenge
 given an array of integers, our function needs to return the same array but reversed without using any built it methods.
