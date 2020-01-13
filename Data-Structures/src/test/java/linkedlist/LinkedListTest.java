@@ -36,9 +36,9 @@ public class LinkedListTest {
         test.insertHead(31);
         test.insertHead(66);
         test.insertHead(9);
-        test.insertHead(16);
+        test.insertHead(15);
         LinkedList input = test;
-        String expected = "{16} -> {9} -> {66} -> {31} -> NULL";
+        String expected = "{15} -> {9} -> {66} -> {31} -> NULL";
         String actual = input.toString();
         Assert.assertEquals(expected,actual);
     }
