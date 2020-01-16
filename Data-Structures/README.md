@@ -31,11 +31,17 @@ Linked List:
 - Else iterate though the list and and compare value of current to value to insert.
 - same as if block.
 
+![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/Data-Structures/assets/IMG_20200114_095016.jpg?raw=true)
+
+![](https://raw.githubusercontent.com/RanVaknin/data-structures-and-algorithms/master/Data-Structures/assets/IMG_20200114_093156.jpg)
+
 **kthFromEnd**
 - create a temporary node and set it's value to head.
 - find the size of the linked list with helper function ^
 - initialize a counter variable and set it's value to 1.
 - find the delta  linkedlist size - k = where we want to ge tthe value from.
+
+![](https://raw.githubusercontent.com/RanVaknin/data-structures-and-algorithms/master/Data-Structures/assets/82618106_1015954898768379_172280213508456448_n.jpg)
 
 - Iterate through the list, comparing the counter to the detla.  incrementing counter as we go until we find the value.
 
