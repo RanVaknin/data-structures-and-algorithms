@@ -46,3 +46,16 @@ Linked List:
 - Iterate through the list, comparing the counter to the detla.  incrementing counter as we go until we find the value.
 
 - If doesn't find the value throw exception.
+
+
+**ll merge**
+- function takes two linked lists.
+- creates a new linked list <- ll3
+- finds the length of the larger of the two with .size method ^
+- loops over the larger of the two.
+- appends the head of ll1 to the head of ll3.
+- appends the head of ll2 to the head of ll3.
+
+- set the head of ll1 to it's next node and ll2 respectively.
+- return the new linekd list ll3 
+![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/Data-Structures/assets/82983111_460760647924364_1177916234289643520_n.jpg?raw=true)
