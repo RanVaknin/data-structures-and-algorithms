@@ -13,8 +13,6 @@ public class QueueTest {
         queue.enqueue("Americano");
         queue.enqueue("Macchiato");
         queue.enqueue("Latte");
-
-
     }
 
     @Test
