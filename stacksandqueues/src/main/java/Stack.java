@@ -26,15 +26,6 @@ public class Stack {
         return (this.top == null);
     }
 
-//    public static void main(String[] args) {
-//        Stack stack = new Stack();
-//        stack.push("Banana");
-//        stack.push("Apple");
-//        stack.push("Pear");
-//        System.out.println(stack.top.value);
-//        System.out.println(stack.top.next.value);
-//        System.out.println(stack.top.next.next.value);
-//
-//    }
+
 
 }
