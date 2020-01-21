@@ -52,3 +52,5 @@ https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/code401c
 - enque: adds an element in the beginning of the queue.
 - deque: removes an element from the beginning of the queue.
 Both methods operate like a "slanky", creates a stack, populates it, upon insertion or removal of items it reverses the stack, adds or removes and reverses it again
+
+![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/code401challenges/assets/83318261_159357988729070_7077996865609793536_n.jpg?raw=true)
