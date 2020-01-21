@@ -47,4 +47,8 @@ lastly we returned the new array.
 https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/code401challenges/src/main/java/code401challenges/WhiteBoardShift.jpg?raw=true
 
 
- 
+ # Build a Queue with two stacks
+ There are two methods in in this queue:
+- enque: adds an element in the beginning of the queue.
+- deque: removes an element from the beginning of the queue.
+Both methods operate like a "slanky", creates a stack, populates it, upon insertion or removal of items it reverses the stack, adds or removes and reverses it again
