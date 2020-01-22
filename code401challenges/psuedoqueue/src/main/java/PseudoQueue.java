@@ -3,8 +3,13 @@ import java.util.Stack;
 public class PseudoQueue<T> {
     public Stack<T> stack;
 
+    public PseudoQueue() {
+        this.stack = new Stack<>();
+
+    }
+
     public void enqueue(T input) {
-        if (stack.empty()) {
+        if (stack.isEmpty()) {
             stack.push(input);
         } else {
             stack.push(input);
@@ -21,7 +26,7 @@ public class PseudoQueue<T> {
     }
 
     public T deque() {
-        if (stack.isEmpty()) {
+        if (stack == null || stack.isEmpty()) {
             throw new NullPointerException("EMPTY QUEUE");
         } else {
             Stack<T> stack2 = new Stack<>();
