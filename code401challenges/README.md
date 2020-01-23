@@ -54,3 +54,12 @@ https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/code401c
 Both methods operate like a "slanky", creates a stack, populates it, upon insertion or removal of items it reverses the stack, adds or removes and reverses it again
 
 ![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/code401challenges/assets/83318261_159357988729070_7077996865609793536_n.jpg?raw=true)
+
+# AnimalShelter Class
+This class has two methods.
+- enque:  you can either enque a cat or a dog by passing in a Cat instance or a Dog instance as arguments and then passing in a string name of whichever animal you enque.
+
+- deque: you need to pass in a string of whichever animal you want to deque from the shelter. "cat" or "dog". If you dont specify either it will return null.
+
+![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/82766750_524750721728550_4927164268400345088_n.jpg?_nc_cat=104&_nc_ohc=ngRqQN6IBqEAX8sQ0k9&_nc_ht=scontent-sea1-1.xx&_nc_tp=1002&oh=07b2d835f17bff70a4b7727b6c906a0e&oe=5E91E0F9)
+
