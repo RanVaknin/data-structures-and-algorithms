@@ -33,6 +33,7 @@ public class AnimalShelter<T> {
     }
 
     public static void main(String[] args) {
+
         Stack<Integer> stack3 = new Stack<>();
         stack3.push(3);
 
