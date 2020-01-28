@@ -5,8 +5,7 @@ import java.util.ArrayList;
 public class Tree<T> {
     Node<T> root;
 
-    public Tree(Node<T> root) {
-        this.root = root;
+    public Tree() {
     }
 
     public ArrayList<T> traversePreOrder() {
@@ -33,9 +32,9 @@ public class Tree<T> {
         if (root == null) {
             return order;
         } else {
-            traversePreOrder(root.left, order);
+            traverseInOrder(root.left, order);
             order.add(root.value);
-            traversePreOrder(root.right, order);
+            traverseInOrder(root.right, order);
         }
         return order;
     }
@@ -49,8 +48,8 @@ public class Tree<T> {
         if (root == null) {
             return order;
         } else {
-            traversePreOrder(root.left, order);
-            traversePreOrder(root.right, order);
+            traversePostOrder(root.left, order);
+            traversePostOrder(root.right, order);
             order.add(root.value);
         }
         return order;
