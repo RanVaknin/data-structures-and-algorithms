@@ -63,3 +63,9 @@ This class has two methods.
 
 ![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/82766750_524750721728550_4927164268400345088_n.jpg?_nc_cat=104&_nc_ohc=ngRqQN6IBqEAX8sQ0k9&_nc_ht=scontent-sea1-1.xx&_nc_tp=1002&oh=07b2d835f17bff70a4b7727b6c906a0e&oe=5E91E0F9)
 
+
+#breadth first tree traversal.
+this method takes a tree and returns an arrayList based on the tree structure.
+It utilizes a while loop to iterate over the nodes of the tree and compares it to the array I'm pushing into to keep track of it's location within the tree.
+
+![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/83493246_151972636251463_6346282726412255232_n.jpg?_nc_cat=107&_nc_ohc=Xb5tV0IwDtAAX_STaze&_nc_ht=scontent-sea1-1.xx&oh=745ea2df5e1a277d9ee2c1cf67ad5877&oe=5EC99100)
