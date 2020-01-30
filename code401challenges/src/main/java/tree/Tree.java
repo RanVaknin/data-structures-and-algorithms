@@ -2,17 +2,15 @@ package tree;
 
 import java.util.ArrayList;
 
-public class Tree<T> {
-    Node<T> root;
+public class Tree {
+    Node root;
 
-    public Tree() {
-    }
 
-    public ArrayList<T> traversePreOrder() {
+    public ArrayList<Integer> traversePreOrder() {
         return traversePreOrder(this.root, new ArrayList<>());
     }
 
-    private ArrayList<T> traversePreOrder(Node<T> root, ArrayList<T> order) {
+    private ArrayList<Integer> traversePreOrder(Node root, ArrayList<Integer> order) {
         if (root == null) {
             return order;
         } else {
@@ -23,12 +21,12 @@ public class Tree<T> {
         return order;
     }
 
-    public ArrayList<T> traverseInOrder() {
+    public ArrayList<Integer> traverseInOrder() {
         return traverseInOrder(this.root, new ArrayList<>());
     }
 
 
-    private ArrayList<T> traverseInOrder(Node<T> root, ArrayList<T> order) {
+    private ArrayList<Integer> traverseInOrder(Node root, ArrayList<Integer> order) {
         if (root == null) {
             return order;
         } else {
@@ -40,11 +38,11 @@ public class Tree<T> {
     }
 
 
-    public ArrayList<T> traversePostOrder() {
+    public ArrayList<Integer> traversePostOrder() {
         return traversePostOrder(this.root, new ArrayList<>());
     }
 
-    private ArrayList<T> traversePostOrder(Node<T> root, ArrayList<T> order) {
+    private ArrayList<Integer> traversePostOrder(Node root, ArrayList<Integer> order) {
         if (root == null) {
             return order;
         } else {
@@ -55,5 +53,27 @@ public class Tree<T> {
         return order;
     }
 
-}
+    public int findMax(){
+        return findMax(this.root);
+    }
 
+    private int findMax(Node root) {
+        if (root != null) {
+            int max = root.value;
+            if (root.left.value == null) {
+                int leftMax = findMax(root.left);
+                if (leftMax > max) {
+                    max = leftMax;
+                } else if (root.right.value != null) {
+                    int rightMax = findMax(root.left);
+                    if (rightMax > max) {
+                        max = rightMax;
+                    }
+                } else {
+                    return max;
+                }
+            }
+        }
+        return 0;
+    }
+}
