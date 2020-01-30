@@ -12,8 +12,8 @@ import static org.junit.Assert.*;
 
 public class TreeTest {
 
-    Tree<Node> tree = new Tree<>();
-    Tree<Node> tree2 = new Tree<>();
+    Tree tree = new Tree();
+    Tree tree2 = new Tree();
 
     @Before
     public void setup(){
@@ -37,7 +37,7 @@ public class TreeTest {
         expected.add(5);
         expected.add(3);
         expected.add(8);
-        ArrayList<Node> actual = tree.traversePreOrder();
+        ArrayList<Integer> actual = tree.traversePreOrder();
         assertEquals(expected,actual);
     }
 
@@ -69,8 +69,14 @@ public class TreeTest {
         tree2.root = new Node(19);
         tree2.root.left = new Node(99);
         tree2.root.right = new Node(11);
-        assertEquals(99,tree2.root.left.value);
-        assertEquals(11,tree2.root.right.value);
+        assertEquals(99,tree2.root.left.value.intValue());
+        assertEquals(11,tree2.root.right.value.intValue());
 
+    }
+
+    @Test
+    public void test_findMax() {
+
+        System.out.println("eaiwejoaweae "+tree.findMax());
     }
 }
