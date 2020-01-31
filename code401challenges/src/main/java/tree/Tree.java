@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Tree {
     Node root;
+    Node2<Integer> root2;
 
 
     public ArrayList<Integer> traversePreOrder() {
@@ -53,27 +54,25 @@ public class Tree {
         return order;
     }
 
-    public int findMax(){
+    public int findMax() {
         return findMax(this.root);
     }
 
     private int findMax(Node root) {
-        if (root != null) {
-            int max = root.value;
-            if (root.left.value == null) {
-                int leftMax = findMax(root.left);
-                if (leftMax > max) {
-                    max = leftMax;
-                } else if (root.right.value != null) {
-                    int rightMax = findMax(root.left);
-                    if (rightMax > max) {
-                        max = rightMax;
-                    }
-                } else {
-                    return max;
-                }
+        int max = root.value;
+        if (root.left != null) {
+            int leftMax = findMax(root.left);
+            if (leftMax > max) {
+                max = leftMax;
             }
         }
-        return 0;
+        if (root.right != null) {
+            int rightMax = findMax(root.right);
+            if (rightMax > max) {
+                max = rightMax;
+            }
+        }
+        return max;
     }
+
 }

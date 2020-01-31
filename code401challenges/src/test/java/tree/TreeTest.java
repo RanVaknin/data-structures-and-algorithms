@@ -76,7 +76,40 @@ public class TreeTest {
 
     @Test
     public void test_findMax() {
+        tree2.root = new Node(19);
+        tree2.root.left = new Node(99);
+        tree2.root.right = new Node(11);
+        assertEquals(99,tree2.findMax());
 
-        System.out.println("eaiwejoaweae "+tree.findMax());
+        tree.root = new Node(1);
+        tree.root.left = new Node(7);
+        tree.root.left.left = new Node(33);
+        tree.root.left.right = new Node(17);
+        tree.root.left.left.right = new Node(4);
+        tree.root.right = new Node(5);
+        tree.root.right.right = new Node(8);
+        tree.root.right.left = new Node(3);
+        assertEquals(33,tree.findMax());
+
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void test_emptyTree_findMax(){
+        tree2.findMax();
+    }
+
+    @Test
+    public void testNegativeIntsTreeFindMax(){
+        Tree tree3 = new Tree();
+        tree3.root = new Node(-3);
+        tree3.root.left = new Node(37);
+        tree3.root.left.left = new Node(-16);
+        tree3.root.left.right = new Node(115);
+        tree3.root.left.left.right = new Node(-31);
+        tree3.root.right = new Node(-812);
+        tree3.root.right.right = new Node(61);
+        tree3.root.right.left = new Node(24);
+
+        assertEquals(115, tree3.findMax());
     }
 }
