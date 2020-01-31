@@ -78,4 +78,4 @@ this function takes in a tree and returns fizzbuzz if node's values is divisible
 
 # findmax
 this function recursively searches a binaryTree to find the max value;
-![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s2048x2048/84351598_931140360621784_3102023606796812288_n.jpg?_nc_cat=106&_nc_ohc=URHID7ztksQAX8mn4D1&_nc_ht=scontent-sea1-1.xx&oh=1358ca080873e9fda26a2f87edbb4974&oe=5ECC185A)
+![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s1080x2048/83307280_192428818612683_8938770096319365120_n.jpg?_nc_cat=100&_nc_ohc=IJGes-6cZHoAX88ZlqH&_nc_ht=scontent-sea1-1.xx&oh=2e8ad12bafcd8fe10ac340c830e715a8&oe=5EC90722)
