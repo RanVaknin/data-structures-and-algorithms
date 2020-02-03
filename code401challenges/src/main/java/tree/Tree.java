@@ -52,7 +52,9 @@ public class Tree {
             order.add(root.value);
         }
         return order;
-    }
+    } 
+}
+
 
     public int findMax() {
         return findMax(this.root);
