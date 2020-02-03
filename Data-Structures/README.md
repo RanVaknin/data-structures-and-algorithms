@@ -31,12 +31,31 @@ Linked List:
 - Else iterate though the list and and compare value of current to value to insert.
 - same as if block.
 
+![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/Data-Structures/assets/IMG_20200114_095016.jpg?raw=true)
+
+![](https://raw.githubusercontent.com/RanVaknin/data-structures-and-algorithms/master/Data-Structures/assets/IMG_20200114_093156.jpg)
+
 **kthFromEnd**
 - create a temporary node and set it's value to head.
 - find the size of the linked list with helper function ^
 - initialize a counter variable and set it's value to 1.
 - find the delta  linkedlist size - k = where we want to ge tthe value from.
 
+![](https://raw.githubusercontent.com/RanVaknin/data-structures-and-algorithms/master/Data-Structures/assets/82618106_1015954898768379_172280213508456448_n.jpg)
+
 - Iterate through the list, comparing the counter to the detla.  incrementing counter as we go until we find the value.
 
 - If doesn't find the value throw exception.
+
+
+**ll merge**
+- function takes two linked lists.
+- creates a new linked list <- ll3
+- finds the length of the larger of the two with .size method ^
+- loops over the larger of the two.
+- appends the head of ll1 to the head of ll3.
+- appends the head of ll2 to the head of ll3.
+
+- set the head of ll1 to it's next node and ll2 respectively.
+- return the new linekd list ll3 
+![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/Data-Structures/assets/82983111_460760647924364_1177916234289643520_n.jpg?raw=true)

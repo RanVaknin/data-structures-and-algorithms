@@ -1,11 +1,16 @@
 package tree;
 
-public class Node<T> {
-    T value;
-    Node<T> left;
-    Node<T> right;
+public class Node {
+    Integer value;
+    String data;
+    Node left;
+    Node right;
 
-    public Node(T value) {
+    public Node(Integer value) {
         this.value = value;
+    }
+
+    public Node(String data) {
+        this.data = data;
     }
 }
