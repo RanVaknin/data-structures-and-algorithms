@@ -1,4 +1,8 @@
-In this folder you can find two classes:
+In this folder you can find three classes:
+
+Node class:
+ - has a value (I chose a string in this case)
+ - has a reference to the next node.
 
 Stack class:
  - push method: adds a node with an input value to the top of the stack.
