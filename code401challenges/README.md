@@ -84,3 +84,14 @@ this function recursively searches a binaryTree to find the max value;
 ## Hashtable
 I implemented add, get contains and hash methods to my hashtable class
 https://github.com/RanVaknin/data-structures-and-algorithms/pull/47
+
+#leftmerge
+isfunction that LEFT JOINs two hashmaps into a single data structure.
+The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic.
+LEFT JOIN means all the values in the first hashmap are returned, and if values exist in the “right” hashmap, they are appended to the result row. If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
+Avoid utilizing any of the library methods available to your language.
+
+![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s1080x2048/86970246_2317877998505360_7496683265604976640_n.jpg?_nc_cat=107&_nc_ohc=TLe9PqLMekgAX8f_nBP&_nc_ht=scontent-sea1-1.xx&_nc_tp=7&oh=fdd7849bd0ffe428a11afd04ffeb71ad&oe=5EC94648)
