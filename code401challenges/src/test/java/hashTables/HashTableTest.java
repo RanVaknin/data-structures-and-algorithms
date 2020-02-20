@@ -3,6 +3,9 @@ package hashTables;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.Hashtable;
+
 import static org.junit.Assert.*;
 
 public class HashTableTest {
@@ -11,13 +14,19 @@ public class HashTableTest {
     String story3 = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
     HashTable test = new HashTable();
     HashTable test2 = new HashTable();
-    CodeChallengeHashMaps test3 = new CodeChallengeHashMaps();
+    Hashtable<String,String> test4;
+    Hashtable<String,String> test5;
+
+    CodeChallengeHashMaps hm = new CodeChallengeHashMaps();
+
 
 
     @Before
     public void setup(){
         test.put("ran", "vaknin");
         test.put("nar", "vaknin");
+
+
         // these two lines will create a collision and will be handled by a for loop in my put method.
 
         test.put("ruby", "dog");
@@ -52,12 +61,24 @@ public class HashTableTest {
 
     @Test
     public void firstOccurance_test(){
-        assertEquals("it",test3.firstOccuringString(story1));
-        assertEquals("a",test3.firstOccuringString(story2));
-        assertEquals("summer",test3.firstOccuringString(story3));
-        assertEquals("",test3.firstOccuringString(""));
+        assertEquals("it", hm.firstOccuringString(story1));
+        assertEquals("a", hm.firstOccuringString(story2));
+        assertEquals("summer", hm.firstOccuringString(story3));
+        assertEquals("", hm.firstOccuringString(""));
+    }
 
+    @Test
+    public void joinLeft_test(){
+        test4 = new Hashtable<>();
+        test5 = new Hashtable<>();
+        test5.put("hello", "robin");
+        test5.put("mint","chocolate");
+        test5.put("cloak", "dagger");
+        test4.put("hello","django");
+        test4.put("oat","raisins");
+        test4.put("cloak","cape");
 
+        System.out.println(hm.leftJoin(test5,test4));
     }
 
 }
