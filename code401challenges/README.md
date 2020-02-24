@@ -95,3 +95,10 @@ The returned data structure that holds the results is up to you. It doesn’t ne
 Avoid utilizing any of the library methods available to your language.
 
 ![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/s1080x2048/86970246_2317877998505360_7496683265604976640_n.jpg?_nc_cat=107&_nc_ohc=TLe9PqLMekgAX8f_nBP&_nc_ht=scontent-sea1-1.xx&_nc_tp=7&oh=fdd7849bd0ffe428a11afd04ffeb71ad&oe=5EC94648)
+
+
+##
+The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
+
+##TreeIntersection
+this method takes in 2 trees as input and returns a an array list that represents all the values within the two trees.This method utilizes a post order traversal to traverse through the tree and "collect" the values of each tree into an arrayList, then I check for all the same values between the two
