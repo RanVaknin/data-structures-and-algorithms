@@ -2,6 +2,8 @@ package tree;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class NodeTest {
@@ -78,7 +80,54 @@ public class NodeTest {
         node2.right.right.left = new Node(4);
         node2.right.right.right = new Node(500);
 
-        System.out.println(ti.treeIntersection(node,node2));
+        assertEquals("[125, 175, 160, 100, 200, 500, 350]", ti.treeIntersection(node,node2));
+    }
+
+    @Test
+    public void treeIntersectionSingleValue(){
+        Node node = new Node(150);
+
+        node.left = new Node(100);
+        node.left.left = new Node(75);
+        node.left.right = new Node(160);
+        node.left.right.right = new Node(175);
+        node.left.right.left = new Node(125);
+
+        node.right = new Node(250);
+        node.right.left = new Node(200);
+        node.right.right = new Node(350);
+        node.right.right.right = new Node(500);
+        node.right.right.left = new Node(300);
+        ArrayList<Integer> expected = new ArrayList<>();
+        expected.add(125);
+        assertEquals(expected, ti.treeIntersection(node,new Node(125)));
+
+    }
+    @Test
+    public void treeIntersectionNoMatchingValues(){
+        Node node = new Node(150);
+
+        node.left = new Node(100);
+        node.left.left = new Node(75);
+        node.left.right = new Node(160);
+        node.left.right.right = new Node(175);
+        node.left.right.left = new Node(125);
+
+        node.right = new Node(250);
+        node.right.left = new Node(200);
+        node.right.right = new Node(350);
+        node.right.right.right = new Node(500);
+        node.right.right.left = new Node(300);
+
+        Node node2 = new Node(99);
+
+        node2.left = new Node(33);
+        node2.left.left = new Node(1551);
+        node2.left.right = new Node(72);
+        node2.left.right.left = new Node(89);
+        node2.left.right.right = new Node(37);
+        ArrayList<Integer> expected = new ArrayList<>();
+        assertEquals(expected, ti.treeIntersection(node,node2));
 
     }
 
