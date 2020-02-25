@@ -59,3 +59,9 @@ Linked List:
 - set the head of ll1 to it's next node and ll2 respectively.
 - return the new linekd list ll3 
 ![](https://github.com/RanVaknin/data-structures-and-algorithms/blob/master/Data-Structures/assets/82983111_460760647924364_1177916234289643520_n.jpg?raw=true)
+
+##IntersectTrees
+given two trees return an array of all the common values between the trees.
+traverse on tree1, traverse on tree 2  and get values from both
+add non unique values to a list and return.
+![](https://scontent-sea1-1.xx.fbcdn.net/v/t1.15752-9/87428288_1236449826562830_6416443581287890944_n.jpg?_nc_cat=111&_nc_sid=b96e70&_nc_ohc=U9ADHqU2w3gAX-InPJ6&_nc_ht=scontent-sea1-1.xx&oh=edf65520ec888c2ce433178051c67da5&oe=5EC12052)
