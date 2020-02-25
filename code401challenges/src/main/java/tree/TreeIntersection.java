@@ -38,4 +38,13 @@ public class TreeIntersection {
         return order;
     }
 
+
+    public void addOne(Node root) {
+        if (root != null) {
+            root.value++;
+            addOne(root.left);
+            addOne(root.right);
+        }
+    }
+
 }

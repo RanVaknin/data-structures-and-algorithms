@@ -131,4 +131,16 @@ public class NodeTest {
 
     }
 
+    @Test
+    public void addOneTest(){
+        Node test = new Node(5);
+        test.right = new Node(3);
+        test.left = new Node(88);
+        ti.addOne(test);
+        assertEquals(6, test.value);
+        assertEquals(4, test.right.value);
+        assertEquals(89, test.left.value);
+
+
+    }
 }
