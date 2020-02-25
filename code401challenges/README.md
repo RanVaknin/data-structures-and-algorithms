@@ -100,5 +100,19 @@ Avoid utilizing any of the library methods available to your language.
 ##
 The returned data structure that holds the results is up to you. It doesn’t need to exactly match the output below, so long as it achieves the LEFT JOIN logic
 
-##TreeIntersection
+## TreeIntersection
 this method takes in 2 trees as input and returns a an array list that represents all the values within the two trees.This method utilizes a post order traversal to traverse through the tree and "collect" the values of each tree into an arrayList, then I check for all the same values between the two
+
+# Graph
+
+## addNode 
+takes in a string, creates a node with that string value and adds to it to total nodes in graph and to the neighbors (adjacency list)
+
+## addEdge
+takes in two nodes (to  and  from and a weight(optional) ) and creates a link between the two with the optional weight.
+
+## getNeighbors
+takes in a Node and returns a collection of neighbor nodes
+
+## size
+this method simply returns an integer representing the total number of nodes in the graph
